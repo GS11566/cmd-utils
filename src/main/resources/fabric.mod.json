@@ -1,0 +1,39 @@
+{
+	"schemaVersion": 1,
+	"id": "cmd-utils",
+	"version": "${version}",
+	"name": "CMD Utils",
+	"description": "A FabricMC Minecraft modification used for glitch hunting.",
+	"authors": [
+		"Coderx_Gamer",
+		"MrBreakNFix"
+	],
+	"contact": {
+		"homepage": "https://github.com/Coderx-Gamer/cmd-utils/",
+		"sources": "https://github.com/Coderx-Gamer/cmd-utils/"
+	},
+	"license": "GPL-3.0",
+	"icon": "assets/cmd-utils/icon.png",
+	"environment": "client",
+	"entrypoints": {
+		"client": [
+			"org.cmdutils.MainClient"
+		]
+	},
+	"mixins": [
+		"cmd-utils.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	},
+	"custom": {
+          "modmenu:clientsideOnly": true,
+          "modmenu:api": false
+     }
+}
